@@ -1,0 +1,42 @@
+{
+  "name": "cypreesdemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open --e2e",
+    "cy:run": "cypress run --e2e",
+    "cy:report": "cypress run --e2e --reporter cypress-mochawesome-reporter --reporter-options reportDir=cypress/reports,overwrite=false,html=true,json=true",
+    "report:serve": "npx serve cypress/reports",
+    "tsc": "tsc --noEmit",
+    "lint": "eslint . --ext .ts,.js",
+    "format": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Cypress + TypeScript demo project",
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.6",
+    "@cypress/angular": "^4.0.0",
+    "@cypress/react": "^9.0.1",
+    "@cypress/vite-dev-server": "^7.0.0",
+    "@cypress/webpack-preprocessor": "^7.0.1",
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.3.1",
+    "cypress": "^15.1.0",
+    "cypress-mochawesome-reporter": "^3.8.4",
+    "eslint": "^9.9.0",
+    "husky": "^9.0.11",
+    "mochawesome": "^7.1.4",
+    "prettier": "^3.3.3",
+    "serve": "^14.2.3",
+    "ts-loader": "^9.5.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.3"
+  }
+}
