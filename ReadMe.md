@@ -166,6 +166,9 @@ Add these to your package.json:
 1️⃣ Open Cypress GUI
 
 npm run cy:open
+npx cypress open
+
+
 
 2️⃣ Run Tests Headlessly
 

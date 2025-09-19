@@ -1,8 +1,7 @@
 class InventoryPage {
   private productsTitle: string = "Products";
   private backpackBtn: string = '[data-test="add-to-cart-sauce-labs-backpack"]';
-  private bikeLightBtn: string =
-    '[data-test="add-to-cart-sauce-labs-bike-light"]';
+  private bikeLightBtn: string = '[data-test="add-to-cart-sauce-labs-bike-light"]';
   private cartBadge: string = ".shopping_cart_badge";
 
   verifyOnPage(): void {
